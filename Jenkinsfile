@@ -27,7 +27,7 @@ pipeline {
                   echo '---------------------- Docker Build Started --------------------------'
                   withDockerRegistry([credentialsId: "dockerlogin", url: ""]) {
                   script {
-                        app =  docker.build("asg")
+                        app =  docker.build("tsg")
                  }
                  echo '---------------------- Docker Build Completed -------------------------'
                }
